@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import WebServiceLayer
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bestMovieLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        bestMovieLabel.text = MovieWebService().getBestMovieEver()
+
     }
-
-
 }
 

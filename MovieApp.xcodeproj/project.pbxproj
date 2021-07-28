@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300649326B1CAAD0097CD2E /* WebServiceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */; };
 		23905E76261D00050021F692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E75261D00050021F692 /* AppDelegate.swift */; };
 		23905E78261D00050021F692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E77261D00050021F692 /* SceneDelegate.swift */; };
 		23905E7A261D00050021F692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E79261D00050021F692 /* ViewController.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2300648E26B1C9D30097CD2E /* WebServiceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebServiceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebServiceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905E72261D00050021F692 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905E75261D00050021F692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23905E77261D00050021F692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2300649326B1CAAD0097CD2E /* WebServiceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2300648D26B1C9D30097CD2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */,
+				2300648E26B1C9D30097CD2E /* WebServiceLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23905E69261D00050021F692 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 				23905E8E261D00060021F692 /* MovieAppTests */,
 				23905E99261D00060021F692 /* MovieAppUITests */,
 				23905E73261D00050021F692 /* Products */,
+				2300648D26B1C9D30097CD2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -499,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V67D4G3GQV;
 				INFOPLIST_FILE = MovieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V67D4G3GQV;
 				INFOPLIST_FILE = MovieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

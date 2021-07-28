@@ -16,17 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi guys!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-cu-khf">
-                                <rect key="frame" x="158" y="384" width="99" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi guys!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-cu-khf">
+                                <rect key="frame" x="158" y="263" width="99" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best movie ever:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2q-DA-UG5">
+                                <rect key="frame" x="100" y="332" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lord of the Rings: The Return of the King" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qz-Ax-jF0">
+                                <rect key="frame" x="10" y="418" width="394" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cYZ-cu-khf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="Jei-cN-8TT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f2q-DA-UG5" secondAttribute="trailing" constant="100" id="Q0x-7q-ETP"/>
+                            <constraint firstItem="cYZ-cu-khf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="SZg-Hq-0MY"/>
+                            <constraint firstItem="5qz-Ax-jF0" firstAttribute="top" secondItem="f2q-DA-UG5" secondAttribute="bottom" constant="52" id="etM-Lk-dC7"/>
+                            <constraint firstItem="f2q-DA-UG5" firstAttribute="top" secondItem="cYZ-cu-khf" secondAttribute="bottom" constant="35" id="lSq-2J-bvv"/>
+                            <constraint firstItem="f2q-DA-UG5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="lco-5Z-UlO"/>
+                            <constraint firstItem="5qz-Ax-jF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ogX-Ok-YQS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cYZ-cu-khf" secondAttribute="trailing" constant="157" id="pGd-kG-qps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qz-Ax-jF0" secondAttribute="trailing" constant="10" id="saI-GY-IXc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bestMovieLabel" destination="5qz-Ax-jF0" id="3GG-uc-ZnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
