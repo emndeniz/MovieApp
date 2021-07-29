@@ -138,10 +138,6 @@
 		23905E74261D00050021F692 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				23905EB1261D01250021F692 /* Resources */,
-				23905EB0261D007D0021F692 /* Utilities */,
-				23905EAF261D00750021F692 /* Components */,
-				23905EAE261D00660021F692 /* WebService */,
 				23905EAB261D00340021F692 /* Scenes */,
 				23905E75261D00050021F692 /* AppDelegate.swift */,
 				23905E77261D00050021F692 /* SceneDelegate.swift */,
@@ -194,34 +190,6 @@
 			children = (
 			);
 			path = Scene2;
-			sourceTree = "<group>";
-		};
-		23905EAE261D00660021F692 /* WebService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WebService;
-			sourceTree = "<group>";
-		};
-		23905EAF261D00750021F692 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		23905EB0261D007D0021F692 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		23905EB1261D01250021F692 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
