@@ -11,11 +11,15 @@ import WebServiceLayer
 class ViewController: UIViewController {
 
     @IBOutlet weak var bestMovieLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         bestMovieLabel.text = MovieWebService().getBestMovieEver()
 
+        SampleRequest().getEmailFromDummyData(completion: { email in
+            self.emailLabel.text = email
+        })
     }
 }
 

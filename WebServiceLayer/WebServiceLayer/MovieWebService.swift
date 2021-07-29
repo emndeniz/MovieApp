@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public class MovieWebService {
     
     public init() {
