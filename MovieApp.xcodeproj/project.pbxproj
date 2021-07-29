@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2300649326B1CAAD0097CD2E /* WebServiceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */; };
+		232E870E26B2E4960018B535 /* WebServiceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232E870D26B2E4960018B535 /* WebServiceLayer.framework */; };
+		232E870F26B2E4960018B535 /* WebServiceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 232E870D26B2E4960018B535 /* WebServiceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		232E871226B2E49C0018B535 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232E871126B2E49C0018B535 /* UIComponents.framework */; };
+		232E871326B2E49C0018B535 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 232E871126B2E49C0018B535 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23905E76261D00050021F692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E75261D00050021F692 /* AppDelegate.swift */; };
 		23905E78261D00050021F692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E77261D00050021F692 /* SceneDelegate.swift */; };
 		23905E7A261D00050021F692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23905E79261D00050021F692 /* ViewController.swift */; };
@@ -36,9 +39,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		232E871026B2E4960018B535 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				232E871326B2E49C0018B535 /* UIComponents.framework in Embed Frameworks */,
+				232E870F26B2E4960018B535 /* WebServiceLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2300648E26B1C9D30097CD2E /* WebServiceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebServiceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebServiceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232E870D26B2E4960018B535 /* WebServiceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebServiceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232E871126B2E49C0018B535 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905E72261D00050021F692 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905E75261D00050021F692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23905E77261D00050021F692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2300649326B1CAAD0097CD2E /* WebServiceLayer.framework in Frameworks */,
+				232E871226B2E49C0018B535 /* UIComponents.framework in Frameworks */,
+				232E870E26B2E4960018B535 /* WebServiceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 		2300648D26B1C9D30097CD2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				232E871126B2E49C0018B535 /* UIComponents.framework */,
+				232E870D26B2E4960018B535 /* WebServiceLayer.framework */,
 				2300649226B1CAAD0097CD2E /* WebServiceLayer.framework */,
 				2300648E26B1C9D30097CD2E /* WebServiceLayer.framework */,
 			);
@@ -211,6 +234,7 @@
 				23905E6E261D00050021F692 /* Sources */,
 				23905E6F261D00050021F692 /* Frameworks */,
 				23905E70261D00050021F692 /* Resources */,
+				232E871026B2E4960018B535 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

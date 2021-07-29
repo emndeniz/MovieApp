@@ -7,6 +7,7 @@
 
 import UIKit
 import WebServiceLayer
+import UIComponents
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,11 @@ class ViewController: UIViewController {
         SampleRequest().getEmailFromDummyData(completion: { email in
             self.emailLabel.text = email
         })
+        
+        view.addSubview(MyCustomLoader(frame: CGRect(x: 100,
+                                                          y: 300,
+                                                          width: 100,
+                                                          height: 100)))
     }
 }
 
