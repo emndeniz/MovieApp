@@ -10,6 +10,7 @@
 		232E86F626B2E19E0018B535 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232E86EC26B2E19E0018B535 /* UIComponents.framework */; };
 		232E86FB26B2E19E0018B535 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232E86FA26B2E19E0018B535 /* UIComponentsTests.swift */; };
 		232E86FD26B2E19E0018B535 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 232E86EF26B2E19E0018B535 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		232E870726B2E20C0018B535 /* MyCustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232E870626B2E20C0018B535 /* MyCustomLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		232E86F526B2E19E0018B535 /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232E86FA26B2E19E0018B535 /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTests.swift; sourceTree = "<group>"; };
 		232E86FC26B2E19E0018B535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232E870626B2E20C0018B535 /* MyCustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				232E86EF26B2E19E0018B535 /* UIComponents.h */,
 				232E86F026B2E19E0018B535 /* Info.plist */,
+				232E870626B2E20C0018B535 /* MyCustomLoader.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					232E86EB26B2E19E0018B535 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					232E86F426B2E19E0018B535 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232E870726B2E20C0018B535 /* MyCustomLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		232E870126B2E19E0018B535 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		232E870226B2E19E0018B535 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		232E870426B2E19E0018B535 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		232E870526B2E19E0018B535 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
